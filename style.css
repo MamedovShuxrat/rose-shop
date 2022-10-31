@@ -72,7 +72,6 @@ ul {
     list-style: none;
     font-family: 'Roboto';
 
-
 }
 
 .container {
@@ -118,7 +117,6 @@ ul {
 
 .header {
     background-color: #F2F3F5;
-    ;
 }
 
 .header__box {
@@ -131,7 +129,7 @@ ul {
     display: flex;
 }
 
-.icons {
+.icon {
     width: 18px;
     height: 18px;
     background-position: center;
@@ -153,20 +151,20 @@ ul {
 }
 
 /* Header-Nav */
-.header-nav__box {
+.nav__list {
     display: flex;
 }
 
-.header-nav__lists {
+.nav__list-item {
     margin-right: 15px;
     position: relative;
 }
 
-.header-nav__lists:last-child {
+.nav__list-item:last-child {
     margin-right: 0;
 }
 
-.header-nav__lists-link {
+.nav__list-item_link {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -175,12 +173,12 @@ ul {
     transition: color .3s ease-in;
 }
 
-.header-nav__lists_type_nested {
+.nav__lists_type_nested {
     display: flex;
     cursor: pointer;
 }
 
-.header-nav__lists-path {
+.nav__list-item_path {
     background-image: url('./images/icons/Path.svg');
     width: 10px;
     height: 10px;
@@ -188,11 +186,11 @@ ul {
     margin-left: 5px;
 }
 
-.header-nav__lists-link:hover {
+.nav__list-item_link:hover {
     color: #0093A2;
 }
 
-.header-nav__lists-sub-list {
+.nav__lists-sub-list {
     position: absolute;
     top: 20px;
     left: 20px;
@@ -203,13 +201,13 @@ ul {
     border-radius: 10px;
 }
 
-.header-nav__lists-sub-list {
-    display: none;
+.nav__lists-sub-list {
+    opacity: 0;
+    transition: opacity .3s ease-out;
 }
 
-.header-nav__lists_type_nested:hover .header-nav__lists-sub-list {
-    display: block;
-    transition: all .4s linear;
+.nav__lists_type_nested:hover .nav__lists-sub-list {
+    opacity: 1;
 }
 
 
@@ -231,7 +229,7 @@ ul {
 }
 
 /* Header-Order */
-.header-orders {
+.header-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -252,15 +250,15 @@ ul {
     background-image: url('./images/icons/inst.svg');
 }
 
-.header-order__item {
+.header-wrapper__item {
     display: flex;
 }
 
-.header-order__item-client {
+.header-wrapper__item-client {
     background-image: url('./images/icons/user-single.svg');
 }
 
-.header-order__item-title {
+.header-wrapper__item-title {
     margin-left: 10px;
     font-weight: 400;
     font-size: 14px;
