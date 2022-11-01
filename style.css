@@ -125,7 +125,7 @@ ul {
     padding: 15px 0;
 }
 
-.header-time {
+.header__hours {
     display: flex;
 }
 
@@ -135,14 +135,13 @@ ul {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    display: block;
 }
 
-.header-time__time {
+.header__hours-time {
     background-image: url('./images/icons/time-clock.svg');
 }
 
-.header-time__desc {
+.header__hours-desc {
     margin-left: 12px;
     font-weight: 400;
     font-size: 14px;
@@ -178,7 +177,7 @@ ul {
     cursor: pointer;
 }
 
-.nav__list-item_path {
+.icon-down {
     background-image: url('./images/icons/Path.svg');
     width: 10px;
     height: 10px;
@@ -228,7 +227,7 @@ ul {
     color: #0093A2;
 }
 
-/* Header-Order */
+/* Header-wrapper */
 .header-wrapper {
     display: flex;
     justify-content: space-between;
@@ -266,4 +265,39 @@ ul {
     cursor: pointer;
     text-decoration: none;
     color: #505567;
+}
+
+/* Header-control */
+.header__control {
+    background-color: #fff;
+    padding: 16px 0;
+}
+
+.header__control-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    display: block;
+    margin-right: 20px;
+}
+
+.header__control-delivery {
+    font-weight: 400;
+    font-size: 14px;
+    color: #1B1C21;
+    max-width: 130px;
+}
+
+.header__control-search {
+    position: relative;
+}
+
+.header__control-search-input {
+    max-width: 375px;
+    padding: 10px 20px;
+    border: 1px solid #D0D2D7;
+    border-radius: 60px;
+    outline: none;
 }
