@@ -183,6 +183,7 @@ ul {
     height: 10px;
     align-self: center;
     margin-left: 5px;
+    padding: 0 2px;
 }
 
 .nav__list-item_link:hover {
@@ -201,12 +202,13 @@ ul {
 }
 
 .nav__lists-sub-list {
-    opacity: 0;
-    transition: opacity .3s ease-out;
+    display: none;
+    /* transition: opacity .3s ease-out; */
 }
 
 .nav__lists_type_nested:hover .nav__lists-sub-list {
-    opacity: 1;
+    display: block;
+
 }
 
 
@@ -276,6 +278,7 @@ ul {
 .header__control-wrapper {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .header-logo {
@@ -296,8 +299,116 @@ ul {
 
 .header__control-search-input {
     max-width: 375px;
-    padding: 10px 20px;
+    padding: 10px 30px 10px 20px;
     border: 1px solid #D0D2D7;
     border-radius: 60px;
     outline: none;
+}
+
+.btn {
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: inherit;
+}
+
+.btn_search {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 24px;
+    height: 24px;
+    background-image: url('./images/icons/search.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header__control-number {
+    display: flex;
+
+}
+
+.circle-icon {
+    padding: 10px;
+    width: 44px;
+    height: 44px;
+    border-radius: 40px;
+    border: 1px solid #e2e4eb;
+    cursor: pointer;
+}
+
+.circle-icon_phone {
+    margin-right: 15px;
+    background-image: url('./images/icons/Call.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.phone {
+    margin-right: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration: none;
+    color: #222A46;
+}
+
+.call-back {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #505567;
+    text-decoration: none;
+}
+
+.call-back:hover{
+    text-decoration: underline;
+} 
+
+.call-back:focus{
+    color: #E2195B;
+} 
+
+
+.header__control-shop {
+    display: flex;
+    align-items: center;
+}
+
+.circle-icon_lovely {
+    margin-right: 20px;
+    background-image: url('./images/icons/love.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.circle-icon_shop-bag {
+    margin-right: 14px;
+    background-image: url('./images/icons/shopping-basket.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.shop-count {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(34, 42, 70, 0.1);
+    color: #fff;
+    background-color: #E2195B;
+    text-align: center;
+
+}
+
+.header__control-shop-sum {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #E2195B;
 }
