@@ -1,0 +1,33 @@
+.header__catalog {
+    padding: 19px calc((100% - 1200px)/2);
+    background-color: #fff;
+}
+
+.header__catalog-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-discount {
+    background: url('../../images/icons/discount.svg') center center / contain no-repeat;
+    margin-right: 10px;
+}
+
+.header__catalog-list-item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header__catalog-list-item-link {
+    text-decoration: none;
+    color: #1B1C21;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.link_red {
+    color: #E2195B;
+}

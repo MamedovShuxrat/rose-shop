@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+ul {
+    list-style: none;
+    font-family: 'Roboto';
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.icon-down {
+    margin-left: 5px;
+    padding: 0 2px;
+    width: 10px;
+    height: 10px;
+    align-self: center;
+    background-image: url('../images/icons/Path.svg');
+}
+
+.btn {
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: inherit;
+}
+
+.btn_search {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    width: 18px;
+    height: 18px;
+    background: url('../images/icons/search.svg') center center / contain no-repeat;
+}
+
+hr {
+    background: #D7D9DC;
+}
