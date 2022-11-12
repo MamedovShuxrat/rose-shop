@@ -181,12 +181,13 @@
     transition: visibility 0s linear .3s, opacity .3s;
     transition-delay: .3s;
     background: #FFFFFF;
+    z-index: 10;
     box-shadow: 0px 10px 30px rgba(34, 42, 70, 0.1);
     border-radius: 10px;
     border: 1px solid #F2F3F5;
 }
 
-.header__control-number>.icon-down:hover .hide_type_nested {
+.header__control-number:hover .hide_type_nested {
     visibility: visible;
     opacity: 1;
     transition: visibility .3s linear .3s, opacity .3s;
