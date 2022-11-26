@@ -1,12 +1,269 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Лавка роз</title>
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="header__tooltip">
+            <p class="header__tooltip-title">Сумма минимального заказа 1000 ₽</p>
+            <button class="header__tooltip-btn icon">
+            </button>
+        </div>
+        <div class="header__box">
+            <div class="header__hours">
+                <div class="icon header__hours-time"></div>
+                <p class="header__hours-desc">Пн-Сб: 8:00–20:00 Вс: 9:00–20:00</p>
+            </div>
+            <nav class="header__nav nav ">
+                <ul class="nav__list">
+                    <li class="nav__list-item">
+                        <a href="#" class="nav__list-item_link">Доставка</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#" class="nav__list-item_link">Оплата</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#" class="nav__list-item_link">Отзывы</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#" class="nav__list-item_link">Блог</a>
+                    </li>
+                    <li class="nav__list-item nav__lists_type_nested">
+                        <a href="#" class="nav__list-item_link">Информация</a>
+                        <a href="#" class="icon icon-down"></a>
+                        <ul class="nav__lists-sub-list ">
+                            <li class="sub-list__items">
+                                <a href="#" class="sub-list__items-link">Гарантии</a>
+                            </li>
+                            <li class="sub-list__items">
+                                <a href="#" class="sub-list__items-link">Вопрос и ответ</a>
+                            </li>
+                            <li class="sub-list__items">
+                                <a href="#" class="sub-list__items-link">Корпоративным клиентам</a>
+                            </li>
+                            <li class="sub-list__items">
+                                <a href="#" class="sub-list__items-link">О компании</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#" class="nav__list-item_link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-wrapper">
+                <div class="header__social">
+                    <a href="#" class="icon header__social-vk"> </a>
+                    <a href="#" class="icon header__social-inst"></a>
+                </div>
+                <div class="header-wrapper__item">
+                    <a href="#" class="icon header-wrapper__item-client"></a>
+                    <a href="#" class="header-wrapper__item-title">Мои заказы</a>
+                </div>
+            </div>
+        </div>
+        <div class="header__control">
+            <div class="header__control-wrapper">
+                <img src="./images/icons/logo.svg" alt="logo" class="header-logo">
+                <div class="header__control-delivery">Доставка цветов в Воронеже</div>
+                <div class="header__control-search">
+                    <input type="text" class="header__control-search-input" placeholder="Поиск по сайту">
+                    <button class="btn btn_search"></button>
+                </div>
+                <div class="header__control-number">
+                        <div class="circle-icon circle-icon_phone"></div>
+                        <a href="tel:+79202114903" class="phone">+7 (920) 211-49-03</a>
+                        <a href="#" class="call-back">Заказать звонок</a>
+                    <a href="#" class=" icon icon-down">
+                    </a>
+                    <div class="hide_type_nested">
+                        <ul class="sub-about-list">
+                            <li class="sub-about-item">
+                                <a href="tel:+79202114903" class="phone sub_phone sub-about-item_commons">+7 (920) 211-49-03</a>
+                            </li>
+                            <li class="sub-about-item">
+                                <a href="https://yandex.ru/maps/193/voronezh/house/ulitsa_revolyutsii_1905_goda_80b/Z0AYdw9lSEUBQFtrfXp3d3plZw==/?ll=39.185753%2C51.667726&z=16.18"
+                                    class="address sub-about-item_commons">ул. Революции 1905 года 80</a>
+                            </li>
+                            <li class="sub-about-item">
+                                <a href="https://yandex.ru/maps/193/voronezh/house/ulitsa_vladimira_nevskogo_17/Z0AYdwJgSUAEQFtrfXtxeHRkZw==/?ll=39.150053%2C51.709874&z=16"
+                                class="address sub-about-item_commons">ул. Вл. Невского 17</a>
+                            </li>
+                            <li class="sub-about-item">
+                                <a href="mailmailto:info@lavkaroz.ru" class="mail sub-about-item_commons">info@lavkaroz.ru</a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <div class="write-to-us">
+                            <p class="write-to-us__title">Напишите нам:</p>
+                            <div class="write-to-us__box">
+                                <a href="https://www.whatsapp.com/" class="write-to-us__link write-to-us__link_whatsup" target="_blank"></a>
+                                <a href="https://web.telegram.org/" class="write-to-us__link write-to-us__link_telegram" target="_blank"></a>
+                                <a href="https://vk.com/" class="write-to-us__link write-to-us__link_vkontakte" target="_blank"></a>
+                                <a href="https://www.instagram.com/" class="write-to-us__link write-to-us__link_instagram" target="_blank"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__control-shop">
+                    <div class="circle-icon circle-icon_lovely"></div>
+                    <div class="circle-icon circle-icon_shop-bag">
+                        <div class="shop-count">2</div>
+                    </div>
+                    <div class="header__control-shop-sum"> 16500</div>
+                </div>
+            </div>
+        </div>
+        <div class="header__catalog">
+            <ul class="header__catalog-list">
+                <li class="header__catalog-list-item">
+                    <a href="#" class="icon icon-discount"></a>
+                    <a href="#" class="header__catalog-list-item-link link_red">АКЦИИ</a>
+                    
+                </li>
+                <li class="header__catalog-list-item">
+                    <a href="#" class="header__catalog-list-item-link">Цветы поштучно</a>
+                    <a href="#" class="icon icon-down "></a>
+                    <ul class="nav__lists-sub-list ">
+                        <li class="sub-list__items">
+                            <a href="#" class="sub-list__items-link">Голландские розы</a>
+                        </li>
+                        <li class="sub-list__items">
+                            <a href="#" class="sub-list__items-link">Местная роза</a>
+                        </li>
+                        <li class="sub-list__items">
+                            <a href="#" class="sub-list__items-link">Кустовые розы </a>
+                        </li>
+                        <li class="sub-list__items">
+                            <a href="#" class="sub-list__items-link"> Пионовидные розы</a>
+                        </li>
+                        <li class="sub-list__items">
+                            <a href="#" class="sub-list__items-link"> Букет из 101 розы</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__catalog-list-item">
+                    <a href="#" class="header__catalog-list-item-link">Розы</a>
+                    <a href="#" class="icon icon-down"></a>
+                    <ul class="nav__lists-sub-list ">
+                        <li class="sub-list__items">
+                            <a href="#" class="sub-list__items-link">Голландские розы</a>
+                        </li>
+                        <li class="sub-list__items">
+                            <a href="#" class="sub-list__items-link">Местная роза</a>
+                        </li>
+                        <li class="sub-list__items">
+                            <a href="#" class="sub-list__items-link">Кустовые розы </a>
+                        </li>
+                        <li class="sub-list__items">
+                            <a href="#" class="sub-list__items-link"> Пионовидные розы</a>
+                        </li>
+                        <li class="sub-list__items">
+                            <a href="#" class="sub-list__items-link"> Букет из 101 розы</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__catalog-list-item">
+                    <a href="#" class="header__catalog-list-item-link">Букеты</a>
+                    <a href="#" class="icon icon-down"></a>
+                    <ul class="nav__lists-sub-list ">
+                        <li class="sub-list__items">
+                            <a href="#" class="sub-list__items-link">Голландские розы</a>
+                        </li>
+                        <li class="sub-list__items">
+                            <a href="#" class="sub-list__items-link">Местная роза</a>
+                        </li>
+                        <li class="sub-list__items">
+                            <a href="#" class="sub-list__items-link">Кустовые розы </a>
+                        </li>
+                        <li class="sub-list__items">
+                            <a href="#" class="sub-list__items-link"> Пионовидные розы</a>
+                        </li>
+                        <li class="sub-list__items">
+                            <a href="#" class="sub-list__items-link"> Букет из 101 розы</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__catalog-list-item">
+                    <a href="#" class="header__catalog-list-item-link">Композиции</a>
+                    <a href="#" class="icon icon-down"></a>
+                    <ul class="nav__lists-sub-list ">
+                        <li class="sub-list__items">
+                            <a href="#" class="sub-list__items-link">Голландские розы</a>
+                        </li>
+                        <li class="sub-list__items">
+                            <a href="#" class="sub-list__items-link">Местная роза</a>
+                        </li>
+                        <li class="sub-list__items">
+                            <a href="#" class="sub-list__items-link">Кустовые розы </a>
+                        </li>
+                        <li class="sub-list__items">
+                            <a href="#" class="sub-list__items-link"> Пионовидные розы</a>
+                        </li>
+                        <li class="sub-list__items">
+                            <a href="#" class="sub-list__items-link"> Букет из 101 розы</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__catalog-list-item">
+                    <a href="#" class="header__catalog-list-item-link">Подарки</a>
+                    <a href="#" class="icon icon-down"></a>
+                    <ul class="nav__lists-sub-list ">
+                        <li class="sub-list__items">
+                            <a href="#" class="sub-list__items-link">Голландские розы</a>
+                        </li>
+                        <li class="sub-list__items">
+                            <a href="#" class="sub-list__items-link">Местная роза</a>
+                        </li>
+                        <li class="sub-list__items">
+                            <a href="#" class="sub-list__items-link">Кустовые розы </a>
+                        </li>
+                        <li class="sub-list__items">
+                            <a href="#" class="sub-list__items-link"> Пионовидные розы</a>
+                        </li>
+                        <li class="sub-list__items">
+                            <a href="#" class="sub-list__items-link"> Букет из 101 розы</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__catalog-list-item">
+                    <a href="#" class="header__catalog-list-item-link">Шары</a>
+                    <a href="#" class="icon icon-down"></a>
+                    <ul class="nav__lists-sub-list ">
+                        <li class="sub-list__items">
+                            <a href="#" class="sub-list__items-link">Голландские розы</a>
+                        </li>
+                        <li class="sub-list__items">
+                            <a href="#" class="sub-list__items-link">Местная роза</a>
+                        </li>
+                        <li class="sub-list__items">
+                            <a href="#" class="sub-list__items-link">Кустовые розы </a>
+                        </li>
+                        <li class="sub-list__items">
+                            <a href="#" class="sub-list__items-link"> Пионовидные розы</a>
+                        </li>
+                        <li class="sub-list__items">
+                            <a href="#" class="sub-list__items-link"> Букет из 101 розы</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__catalog-list-item">
+                    <a href="#" class="header__catalog-list-item-link">Свадебные букеты</a>
+                </li>
+                <li class="header__catalog-list-item">
+                    <a href="#" class="header__catalog-list-item-link">Повод </a>
+                </li>
+            </ul>
+        </div>
+    </header>
 </body>
+
 </html>
